@@ -18,12 +18,6 @@ app.get('/', function(request, response) {
   response.send(data);
 });
 
-// Render contactpage (note trailing slash): example.com/
-app.get('/contact', function(request, response) {
-  var data = fs.readFileSync('https://b3.caspio.com/scripts/e1.js').try{f_cbload("691c100013f971a87aba44048ac6&uid=ad56c7a1b0b74a0dad868833c0de9d40","https:");}
-catch(v_e){;};
-  response.send(data);
-});
 
 // Render example.com/orders
 app.get('/orders', function(request, response) {

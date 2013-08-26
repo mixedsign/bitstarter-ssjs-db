@@ -18,6 +18,12 @@ app.get('/', function(request, response) {
   response.send(data);
 });
 
+// Render contactpage (note trailing slash): example.com/
+app.get('/', function(request, response) {
+  var data = fs.readFileSync('contact.html').toString();
+  response.send(data);
+});
+
 // Render example.com/orders
 app.get('/orders', function(request, response) {
   global.db.Order.findAll().success(function(orders) {

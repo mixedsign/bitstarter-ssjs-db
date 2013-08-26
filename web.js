@@ -19,7 +19,7 @@ app.get('/', function(request, response) {
 });
 
 // Render contactpage (note trailing slash): example.com/
-app.get('/', function(request, response) {
+app.get('/contact', function(request, response) {
   var data = fs.readFileSync('contact.html').toString();
   response.send(data);
 });
